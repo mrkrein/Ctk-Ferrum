@@ -1,0 +1,93 @@
+.home {
+        background: url(../img/slide-1.png) rgba(0, 0, 0, 0.6);
+        background-size: cover;
+        background-blend-mode: multiply;
+}
+.cards-card {
+        min-width: 32.2%;
+        height: 90%;
+        margin: 0 20px 0 0;
+        position: relative;
+        left: 0;
+        transition: 0.5s;
+}
+.shop-slider span {
+        font-size: 40px;
+        margin: 0 5px;
+        cursor: pointer;
+        color: #000;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        line-height: 19px;
+        text-align: center;
+        border-radius: 3px;
+        transition: 0.3s;
+}
+.description-num i::before {
+        display: block;                
+        width: 20px;
+        height: 3px;                  
+        content: '';                    
+        position: absolute;
+        border-radius: 200px;             
+        background-color: #000;   
+        left: 0;
+        top:45%;
+}
+.description-num {
+        padding-left: 30px;
+        position: relative;
+}
+.content-info {
+        width: 90px;
+        min-height: 100%;
+        align-items: center;
+        border: 43px solid #FF9900;
+}
+.acc-item {
+        cursor: pointer;
+}
+.content-left {
+        margin-right: 60px;
+        min-width: 700px;
+}
+.acc-title {
+        font-size: 22px;
+}
+.acc-title span {
+        font-size: 40px;
+        font-weight: 500;
+        color:rgba(0, 0, 0, 0.4);
+}
+.review {
+        max-width: 490px;
+        border-color: #777777;
+}
+.home .content {
+        margin-top: 20%;
+}
+.content-flex {
+        max-width: 640px;
+}
+.main-screen {
+        height: 100%;
+}
+.main-screen .wrapper {
+        height: 100%;
+}
+.social {
+        position: absolute;
+        bottom: 10%;
+}
+.home .wrapper {
+        position: relative;
+}
+.card-text .card-number {
+        color: rgba(0, 0, 0, 0.15);
+        font-weight: 700;
+        font-size: 50px;
+}
+.content-card .card-img {
+        min-width: 50%;
+}
