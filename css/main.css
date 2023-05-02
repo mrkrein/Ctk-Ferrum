@@ -1,5 +1,5 @@
 .home {
-        background: url(../img/slide-1.png) rgba(0, 0, 0, 0.6);
+        background: url(../img/slide-1.png) rgba(0, 0, 0, 0.3);
         background-size: cover;
         background-blend-mode: multiply;
 }
