@@ -91,3 +91,21 @@
 .content-card .card-img {
         min-width: 50%;
 }
+.review:hover{
+        background-color: #FF9900;
+        color: white;
+        border: 2px solid transparent;
+        transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.acc-item:hover{
+        background-color: #FF9900;
+        transition: background-color 0.3s ease-in-out;
+}
+.acc-item:hover > .acc-title {
+        transition: color 0.3s ease-in-out;
+        color: white;
+}
+.acc-item:hover > .acc-title span {
+        transition: color 0.3s ease-in-out;
+        color: rgb(255, 255, 255);
+}

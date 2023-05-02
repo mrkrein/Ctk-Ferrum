@@ -10,7 +10,7 @@
 </head>
 <body class="font-Montserrat">
     <!-- Home -->
-    <section class="home h-screen text-white">
+    <section class="home h-screen text-white" id="home">
         <div class="container mx-auto main-screen">
             <div class="wrapper">
                 <div class="navbar flex justify-between pt-10">
@@ -19,11 +19,11 @@
                     </div>
                     <div class="navbar-nav">
                         <ul class="flex space-x-14">
-                            <li><a href="#">О нас</a></li>
-                            <li><a href="#">Товары</a></li>
-                            <li><a href="#">Услуги</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Контакты</a></li>
+                            <li><a data-scroll href="#about" class="hover:border-b-2 hover:border-white py-2 transition-all duration-100">О нас</a></li>
+                            <li><a data-scroll href="#shop" class="hover:border-b-2 hover:border-white py-2 transition-all duration-100">Товары</a></li>
+                            <li><a data-scroll href="#services" class="hover:border-b-2 hover:border-white py-2 transition-all duration-100">Услуги</a></li>
+                            <li><a data-scroll href="#reviews" class="hover:border-b-2 hover:border-white py-2 transition-all duration-100">Отзывы</a></li>
+                            <li><a data-scroll href="#contact" class="hover:border-b-2 hover:border-white py-2 transition-all duration-100">Контакты</a></li>
                         </ul>
                     </div>
                     <div class="navbar-contact">
@@ -33,14 +33,14 @@
                 <div class="content">
                     <div class="content-flex">
                         <div class="content-text">
-                            <div class="text-title">Мы за хороший урожай!</div>
-                            <div class="text-description">
+                            <div class="text-title text-4xl font-bold">Мы за хороший урожай!</div>
+                            <div class="text-description my-8">
                                 <p>
                                     Цельные металлические теплицы и парники от производителя. Мы изготавливаем парники и теплицы под определенные нужды и размеры, предоставленные заказчиком.
                                 </p>
                             </div>
                             <div class="text-button">
-                                <a href="">Оформить заявку</a>
+                                <a href="" class="rounded-lg bg-accent text-white px-8 py-2">Оформить заявку</a>
                             </div>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
     </section>
 
     <!-- About -->
-    <section>
+    <section id="about">
         <div class="container mx-auto my-20">
             <div class="about-title font-bold text-4xl">Почему выбирают нас</div>
             <div class="about-content">
@@ -133,7 +133,7 @@
     </section>
 
     <!-- Shop --> 
-    <section>
+    <section id="shop">
         <div class="container mx-auto my-20">
             <div class="shop-title font-bold text-4xl">Товары</div>
             <div class="shop-content mt-8">
@@ -234,7 +234,7 @@
             <div class="wrapper text-center">
                 <div class="contact-title text-4xl font-bold">Появились вопросы по товарам или услугам ?</div>
                 <div class="contact-muted text-lg font-medium text-white/70">Оставьте заявку и получите бесплатную консультацию нашего специалиста.</div>
-                <div class="contact-form mt-8">
+                <div class="contact-form mt-8 space-x-4">
                     <input type="text" placeholder="Ваше имя" class="bg-accent placeholder:text-white border-2 rounded-lg px-14 py-2">
                     <input type="text" placeholder="+ 7 (___) ___ - __ - __" class="bg-accent placeholder:text-white border-2 rounded-lg px-14 py-2">
                     <button class="border-2 rounded-lg px-14 py-2">Оставить заявку</button>
@@ -244,7 +244,7 @@
     </section>
 
     <!-- Services -->
-    <section>
+    <section id="services">
         <div class="container mx-auto mt-20 mb-44">
             <div class="wrapper">
                 <div class="services-title text-4xl font-bold">Услуги</div>
@@ -303,30 +303,30 @@
     </section>
 
     <!-- Reviews -->
-    <section class="bg-muted-bg">
+    <section class="bg-muted-bg" id="reviews">
         <div class="container mx-auto">
             <div class="wrapper py-20">
                 <div class="reviews-title text-4xl font-bold">Отзывы</div>
                 <div class="reviews-content flex justify-between mt-16">
                     <div class="review border-2 rounded-lg py-14 px-9">
-                        <div class="review-title">Олег</div>
-                        <div class="review-desc">
+                        <div class="review-title font-semibold text-2xl">Олег</div>
+                        <div class="review-desc mt-2">
                             <p>
                                 Очень понравилось отношение компании к своим клиентам. Обьяснили все сразу, назвали прайс-лист. Оформил заявку и получил качественное обслуживание.
                             </p>
                         </div>
                     </div>
                     <div class="review border-2 rounded-lg py-14 px-9">
-                        <div class="review-title">Иван</div>
-                        <div class="review-desc">
+                        <div class="review-title font-semibold text-2xl">Иван</div>
+                        <div class="review-desc mt-2">
                             <p>
                                 Заказывал забор из проф.листа. Приехали, замерили, через пару дней все поставили. Качеством доволен, 5 из 5.
                             </p>
                         </div>
                     </div>
                     <div class="review border-2 rounded-lg py-14 px-9">
-                        <div class="review-title">Кирилл</div>
-                        <div class="review-desc">
+                        <div class="review-title font-semibold text-2xl">Кирилл</div>
+                        <div class="review-desc mt-2">
                             <p>
                                 Понравилось все, от общения и до монтажа. Заказал теплицу “Кроха”. Приехали быстро, теплицей с женой довольны.
                             </p>
@@ -341,7 +341,7 @@
     </section>
 
     <!-- Map -->
-    <section>
+    <section id="contact">
         <div class="relative">
             <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=false&amp;um=constructor%3Ab5994935306b27cb1e796831b54a9080e6c3231ff7f3e6f1f21626d3ac38f68f" frameborder="0" allowfullscreen="true" width="100%" height="720px" style="display: block;"></iframe>
             <div class="absolute top-1/3 left-40">
@@ -349,15 +349,15 @@
                     <div class="map-logo">
                         <img src="img/logo-home.svg" alt="CTK-Ferrum">
                     </div>
-                    <div class="map-text">
-                        <ul>
+                    <div class="map-text my-4">
+                        <ul class="space-y-4">
                             <li>
                                 <img src="" alt="">
                                 <h4>Великий устюг, Улица Луначарского, 22</h4>
                             </li>
                             <li>
                                 <img src="" alt="">
-                                <div class="">
+                                <div class="space-y-4">
                                     <h4>8953-513-53-33</h4>
                                     <h4>8953-503-41-07</h4>
                                 </div>
@@ -384,24 +384,24 @@
                     <img src="img/logo-footer.svg" alt="CTK-Ferrum">
                 </div>
                 <div class="footer-menu">
-                    <div class="menu-title">Меню</div>
+                    <div class="menu-title text-3xl font-semibold mb-2">Меню</div>
                     <div class="menu">
-                        <ul class="flex">
+                        <ul class="flex space-x-8">
                             <li><a href="">О нас</a></li>
                             <li><a href="">Услуги</a></li>
                             <li><a href="">Контакты</a></li>
                         </ul>
-                        <ul class="flex">
+                        <ul class="flex space-x-4 mt-2">
                             <li><a href="">Товары</a></li>
                             <li><a href="">Отзывы</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer-contact">
-                    <div class="contact-title">Контакты</div>
-                    <div class="contact-num"><a href="">8953-513-53-33</a></div>
-                    <div class="contact-num"><a href="">8953-503-41-07</a></div>
-                    <div class="contact-mail"><a href="">sales@ctk-ferrum.ru</a></div>
+                    <div class="contact-title text-3xl font-semibold mb-2">Контакты</div>
+                    <div class="contact-num mb-2"><a href="">8953-513-53-33</a></div>
+                    <div class="contact-num mb-2"><a href="">8953-503-41-07</a></div>
+                    <div class="contact-mail mb-2"><a href="">sales@ctk-ferrum.ru</a></div>
                 </div>
                 <div class="footer-link">
                     <div class="footer-button">
@@ -432,5 +432,9 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 </html>
